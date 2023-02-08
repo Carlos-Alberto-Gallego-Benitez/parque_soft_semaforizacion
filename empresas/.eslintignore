@@ -1,0 +1,3 @@
+{
+    "ignorePatterns": ["assets/vendor/*/*.js"],
+}
