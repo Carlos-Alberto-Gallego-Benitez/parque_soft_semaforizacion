@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-02-2023 a las 19:57:28
+-- Tiempo de generación: 08-02-2023 a las 23:09:13
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -305,7 +305,8 @@ INSERT INTO `empresas` (`id`, `id_sector`, `id_usuario`, `id_cantidad_trabajador
 (187, 23, 274, 1, 'DEPOSITO MATIAS', '92098958-6', 'CALLE13 NO 7-6', 'RUBY.NAVA0110@GMAIL.COM', '-1178736445', 'CARLOS PATERNINA', '92098958', '2022-05-26 21:40:45', '2022-05-26 21:40:45'),
 (188, 23, 273, 1, 'CORPORACION DE TELEVISION COMUNITARIA DE COLOSO', '900548680-6', 'CALLE 13 #7-20', 'ORBIT.TV2@HOTMAIL.COM', '-1180760781', 'BILIARDO GONZALEZ REALES', '92512770', '2022-05-26 21:44:10', '2022-05-26 21:44:10'),
 (189, 23, 271, 1, 'BEER WORLD MUNDO DE LA CERVEZA', '92131845-3', 'BARRIO PANAMA', 'DANIL_ARROYO_A@HOTMAIL.COM', '-1188141409', 'DANIL JOSE ARROYO ACEVEDO', '92131845', '2022-05-26 21:49:01', '2022-05-26 21:49:01'),
-(190, 18, 272, 1, 'COOPERATIVA MULTIACTIVA AGROPECUARIA CAMPO VERDE', '823004336-3', 'CRA18#31-39 BARRIO LA BOMBA OVEJAS SUCRE', 'GDSALAS.5@GMAIL.COM', '-1277474927', 'YOSALIS ORTEGA NOVA', '64579426', '2022-05-26 21:59:00', '2022-05-26 21:59:00');
+(190, 18, 272, 1, 'COOPERATIVA MULTIACTIVA AGROPECUARIA CAMPO VERDE', '823004336-3', 'CRA18#31-39 BARRIO LA BOMBA OVEJAS SUCRE', 'GDSALAS.5@GMAIL.COM', '-1277474927', 'YOSALIS ORTEGA NOVA', '64579426', '2022-05-26 21:59:00', '2022-05-26 21:59:00'),
+(191, 19, 278, 2, 'CDDD', '22222223344', 'EEEEE', 'AASS@GMAIL.COM', '333333333333', 'DFDF', '123444', '2023-02-09 02:16:49', '2023-02-09 02:16:49');
 
 -- --------------------------------------------------------
 
@@ -7375,7 +7376,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 (274, 'DEPOSITO MATIAS', 'ruby.nava0110@gmail.com', NULL, '$2y$10$j2Hs16ZbbpHhXqtwBit83umexOLu4qjZx8CNVez/j0O0jVqbnW0Y2', NULL, '2022-05-26 20:16:29', '2022-05-26 20:16:29', 3),
 (275, 'FUNDACION PARA EL DESARROLLO Y BIENESTAR DE MONTES DE MARIA FUNDEMON', 'proferaher@gmail.com', NULL, '$2y$10$l1TnVm4a5WVzgokRaxUF3epPpn8RubdmIgFlEodCV6Tv/2.Yeebjq', NULL, '2022-05-26 20:17:50', '2022-05-26 20:17:50', 3),
 (276, 'GALLINAS PONEDORAS EL MEJOR PUNTO', 'donadobalseirodayan@gmail.com', NULL, '$2y$10$8.tosQfD9gaUPs0LKy/QtuyH1nb8cvwQhIOSUssEEHa149dKHfEui', NULL, '2022-05-26 20:18:44', '2022-05-26 20:18:44', 3),
-(277, 'LA PATILLERA DE SUCRE', 'brayanmercadoalcala@gmail.com', NULL, '$2y$10$/aSWyXvF8Cb3wNf9xcv2n./7Eo7xGyGHzv/astQlZcPUquBH6hSjK', NULL, '2022-05-26 20:25:55', '2022-05-26 20:25:55', 3);
+(277, 'LA PATILLERA DE SUCRE', 'brayanmercadoalcala@gmail.com', NULL, '$2y$10$/aSWyXvF8Cb3wNf9xcv2n./7Eo7xGyGHzv/astQlZcPUquBH6hSjK', NULL, '2022-05-26 20:25:55', '2022-05-26 20:25:55', 3),
+(278, 'usuario de prueba', 'estandar1@gmail.com', NULL, '$2a$12$yBL1uVerYUxAbXFfVqcwtuuVEZS/vuKchbF.GUjq4m5tjhOvYqssy', NULL, NULL, NULL, 3);
 
 --
 -- Índices para tablas volcadas
@@ -7590,7 +7592,7 @@ ALTER TABLE `detalles_respuestas_usuario`
 -- AUTO_INCREMENT de la tabla `empresas`
 --
 ALTER TABLE `empresas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
 
 --
 -- AUTO_INCREMENT de la tabla `etapas`
@@ -7662,7 +7664,7 @@ ALTER TABLE `sectores_empresa`
 -- AUTO_INCREMENT de la tabla `s_detalles_respuestas_secciones`
 --
 ALTER TABLE `s_detalles_respuestas_secciones`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=836;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=841;
 
 --
 -- AUTO_INCREMENT de la tabla `s_detalles_respuestas_usuario`
@@ -7698,7 +7700,7 @@ ALTER TABLE `s_preguntas_seccion`
 -- AUTO_INCREMENT de la tabla `s_respuestas_usuario`
 --
 ALTER TABLE `s_respuestas_usuario`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=168;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=169;
 
 --
 -- AUTO_INCREMENT de la tabla `s_seccion_formulario`
@@ -7710,7 +7712,7 @@ ALTER TABLE `s_seccion_formulario`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=278;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=279;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
