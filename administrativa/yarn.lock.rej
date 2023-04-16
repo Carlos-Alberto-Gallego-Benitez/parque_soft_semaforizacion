@@ -1,0 +1,13 @@
+diff a/administrativa/yarn.lock b/administrativa/yarn.lock	(rejected hunks)
+@@ -5817,7 +5817,11 @@
+ 
+ jquery@>=1.7, jquery@^3.6.0:
+   version "3.6.0"
++<<<<<<< HEAD
+   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
++=======
++  resolved "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz"
++>>>>>>> c8b6ebe34c092f96035659e281e3cf8e92262cae
+   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+ 
+ js-base64@^2.1.8:
