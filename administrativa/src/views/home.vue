@@ -143,4 +143,5 @@
 </template>
 <script>
   import('../assets/css/dashbord.css')
+   import('../assets/js/script.js')
 </script>
