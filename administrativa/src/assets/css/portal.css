@@ -8037,7 +8037,7 @@ fieldset:disabled .btn {
 }
 
 .bg-orange {
-    background-color: #ff8000 !important
+    background-color: #ff8000;
 }
 
 .bg-danger {

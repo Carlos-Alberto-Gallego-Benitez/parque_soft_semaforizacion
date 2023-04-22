@@ -1,4 +1,5 @@
 <template>
+  <section>
   <div id="app-sidepanel" class="app-sidepanel">
     <div id="sidepanel-drop" class="sidepanel-drop"></div>
     <div class="sidepanel-inner d-flex flex-column">
@@ -102,6 +103,7 @@
 
     </div><!--//sidepanel-inner-->
   </div><!--//app-sidepanel-->
+</section>
 </template>
 
 <script>
