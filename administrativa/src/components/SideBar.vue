@@ -29,23 +29,7 @@
                 </span>
               <span class="nav-link-text">Sectores Empresas</span>
             </router-link><!--//nav-link-->
-          </li><!--//nav-item-->
-          <!-- <li class="nav-item">
-            <router-link class="nav-link " to="/etapas">
-                <span class="nav-icon">
-                  <i class="fas fa-layer-group"></i>
-                </span>
-              <span class="nav-link-text">Etapas</span>
-            </router-link>
-          </li> --><!--//nav-item-->
-         <!--  <li class="nav-item">
-            <router-link class="nav-link " to="/configuracion-formularios">
-                <span class="nav-icon">
-                  <i class="fas fa-newspaper"></i>
-                </span>
-              <span class="nav-link-text">Formularios</span>
-            </router-link>
-          </li> --><!--//nav-item-->
+          </li>
           <li class="nav-item">
             <router-link class="nav-link " to="/config-formularios">
                 <span class="nav-icon">
