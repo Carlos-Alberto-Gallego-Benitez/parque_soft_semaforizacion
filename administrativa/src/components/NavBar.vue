@@ -2,7 +2,7 @@
   <div class="app-header-inner bg-orange">
     <div class="container-fluid py-2 " >
       <div class="app-header-content ">
-        <div class="row justify-content-between align-items-center">
+        <div class="flex-lateral">
 
           <div class="col-auto">
             <a id="sidepanel-toggler" class="sidepanel-toggler d-inline-block d-xl-none" href="#">
@@ -15,7 +15,16 @@
           <div class="app-search-box col">
             
           </div><!--//app-search-box-->
-
+          <div id='optionbarr'>
+             <nav>
+                <input type="checkbox" id="switch-mode" hidden="">
+                  <label for="switch-mode" class="switch-mode"></label>
+                  <a href="#" class="notification">
+                    <i class="bx bxs-bell"></i>
+                    <span class="num">8</span>
+                  </a>
+                </nav>
+          </div>
           <div class="app-utilities col-auto">
             <div class="app-utility-item app-notifications-dropdown dropdown">
               
@@ -99,9 +108,9 @@
               </div><!--//dropdown-menu-->
             </div><!--//app-utility-item-->
             <div class="app-utility-item">
-             
+           
             </div><!--//app-utility-item-->
-
+            
             <div class="app-utility-item app-user-dropdown dropdown">
               <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
                 <img src="./../assets/images/user.png" alt="user profile">

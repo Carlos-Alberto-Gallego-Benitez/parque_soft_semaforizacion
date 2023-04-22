@@ -17,6 +17,10 @@
     --light-orange: #FFE0D3;
 }
 
+body{
+    background: var(--grey);
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -268,4 +272,77 @@ li {
     height: 36px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+#optionbarr nav {
+    height: 56px;
+    background: white;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+    font-family: var(--lato);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#optionbarr nav .switch-mode {
+    display: block;
+    min-width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background: var(--grey);
+    cursor: pointer;
+    position: relative;
+}
+
+#optionbarr nav .switch-mode::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: calc(25px - 4px);
+    background: var(--blue);
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+#optionbarr nav .notification {
+    font-size: 20px;
+    position: relative;
+}
+#optionbarr nav a {
+    color: var(--dark);
+}
+
+.flex-lateral{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#optionbarr nav #switch-mode:checked + .switch-mode::before {
+	left: calc(100% - (25px - 4px) - 2px);
+}
+
+#optionbarr nav .notification .num {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--light);
+    background: var(--red);
+    color: var(--light);
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
